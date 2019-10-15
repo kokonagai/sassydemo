@@ -1,0 +1,19 @@
+/* BUTTONS */
+
+button, 
+.button {
+    line-height: 1;
+    font-family: $heading-fontfamily;
+    font-size: inherit;
+    background-color: $color-links;
+    color: #fff;
+    padding: .5em 1.2em;
+    display: inline-block;
+    margin: .5em;
+    border-radius: .5em;
+
+    &:hover {
+        background-color: $color-links-dark;
+        color: rgb(255, 129, 129);
+    }
+}
