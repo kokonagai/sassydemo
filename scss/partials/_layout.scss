@@ -1,6 +1,6 @@
 // BOX SIZING
 * {box-sizing: border-box;}
-html, body { height: 100%; } 
+html, body { height: 100%; }  
 
 // LAYOUT RESPONSIVE TYPE SCALING FOR BREAK POINT
 //14px ON SMALL SCREENS (MOBILE)
@@ -13,12 +13,12 @@ body {
 }
 
 .container {
-    padding: 0 4%
+    padding: 0 4%;
 }
 
 @media (min-width: $breakpoint-small) {
     body {
-        font-size: 100% // 16px
+        font-size: 100%; // 16px
     }
 }
 
