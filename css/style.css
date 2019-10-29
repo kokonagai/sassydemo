@@ -297,17 +297,17 @@ body {
       transform: translateY(0px);
       opacity: 1; }
       .site-header .site-nav.active li:nth-child(1) {
-        -webkit-transition-delay: 0;
-        -o-transition-delay: 0;
-        transition-delay: 0; }
-      .site-header .site-nav.active li:nth-child(2) {
         -webkit-transition-delay: .2s;
         -o-transition-delay: .2s;
         transition-delay: .2s; }
-      .site-header .site-nav.active li:nth-child(3) {
+      .site-header .site-nav.active li:nth-child(2) {
         -webkit-transition-delay: .4s;
         -o-transition-delay: .4s;
         transition-delay: .4s; }
+      .site-header .site-nav.active li:nth-child(3) {
+        -webkit-transition-delay: .6s;
+        -o-transition-delay: .6s;
+        transition-delay: .6s; }
 
 /* MENU BUTTON */
 .menu-button {
