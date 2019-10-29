@@ -256,7 +256,6 @@ body {
   display: grid;
   place-items: center; }
   .site-nav ul {
-    background: #ff5d78;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -275,7 +274,9 @@ body {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
-  cursor: pointer; }
+  cursor: pointer;
+  /* TEMP FIX tO SEE BACKGROUND COLOR */
+  background-color: black; }
 
 section {
   padding: 2em 4em;
