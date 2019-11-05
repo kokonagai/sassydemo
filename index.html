@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section id="typography">
+    <section id="typography" data-scroll="out">
 
         <div class="container">
 
@@ -78,7 +78,7 @@
     </section>
     <hr />
 
-    <section id="layout" class="split-crossed-left">
+    <section id="layout" class="split-crossed-left" data-scroll="out">
         <div class="container">
 
             <div class="image-block">
@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <section class="split-crossed-reversed">
+    <section class="split-crossed-reversed" data-scroll="out">
         <div class="container">
             <div class="image-block">
                 <img src="https://picsum.photos/g/1500/?random" alt=" placeholder image">
@@ -139,6 +139,15 @@
     </script>
     <!-- END SMOOTH SCROLL JS -->
 
+    <!-- SCROLL OUT SCROLL TRIGGERED ANIMATION -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut(
+            { threshold: 0.4 }
+        );
+    </script>
+
     <!-- MAIN JS -->
+
 
     <script src="js/script.js"></script>

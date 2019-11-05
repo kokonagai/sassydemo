@@ -237,5 +237,36 @@ section {
         }
     
     }
+/* scroll triggered animation via scroll out */
+
+    [data-scroll] {
+        transition: opacity 3s
+        linear, transform 1s cubic-bezier(0,1,1,1);
+      }
+      [data-scroll="in"] {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      [data-scroll="out"] {
+        opacity: 0;
+        transform: translateY(20px)
+      }
+
+      // split crossed left animation
+
+      [data-scroll].split-crossed-left .image-block,
+      [data-scroll].split-crossed-left .image-text {
+        transition: 1s ease-out transform;
+      }
 
 
+      [data-scroll="in"].split-crossed-left .image-block,
+      [data-scroll="in"].split-crossed-left .text-block {
+        transform: translateX(0);
+      }
+
+
+      [data-scroll="out"].split-crossed-left .image-block,
+      [data-scroll="out"].split-crossed-left .text-block {
+        transform: translateX(-200px);
+      }
