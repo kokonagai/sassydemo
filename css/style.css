@@ -318,6 +318,33 @@ body {
   z-index: 200;
   /* TEMP FIX tO SEE BACKGROUND COLOR */ }
 
+.menu-button.navicon {
+  font-size: 1.75em;
+  top: 1em;
+  right: 1em;
+  text-align: center;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1; }
+  .menu-button.navicon:before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    content: "\2630";
+    -webkit-transform: rotate(-1800);
+    -ms-transform: rotate(-1800);
+    transform: rotate(-1800);
+    -webkit-transition: .4s all ease-out;
+    -o-transition: .4s all ease-out;
+    transition: .4s all ease-out; }
+
+.active .menu-button.navicon:before {
+  content: "\2715";
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 section {
   padding: 2em 4em;
   min-height: 100vh;

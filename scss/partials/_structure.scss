@@ -94,6 +94,32 @@
    
 }
 
+.menu-button.navicon {
+    font-size: 1.75em;
+    top:1em;
+    right: 1em;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    // background: pink;
+    line-height: 1;
+
+    &:before {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        content: "\2630";
+        // background: teal;
+        transform: rotate(-1800);
+        transition: .4s all ease-out;
+    }
+}
+.active .menu-button.navicon:before {
+    content: "\2715";
+    transform: rotate(-90deg);
+}
+
 section {
     padding: 2em 4em;
     min-height: 100vh;
